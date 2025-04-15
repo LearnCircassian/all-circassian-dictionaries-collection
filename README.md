@@ -21,3 +21,8 @@ This folder contains the finalized version of the dictionaries, fully converted 
 - Each file includes all necessary HTML layout and styling classes for seamless integration with the frontend.
 - Because several dictionaries originally came in HTML and were hard to convert to structured formats like JSON, the decision was made to convert **all** dictionaries into a consistent HTML format instead.
 - This approach allows the use of HTML rendering libraries on the website to faithfully preserve layout, spacing, and styling from the original sources.
+
+## Contributing
+
+If you're able to parse the HTML-formatted dictionaries into clean JSON structures, your help would be greatly appreciated!  
+With properly structured JSON, we can move toward a fully JSON-based system, making the data easier to process, search, and work with across different platforms.
