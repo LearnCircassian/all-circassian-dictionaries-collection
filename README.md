@@ -22,6 +22,16 @@ This folder contains the finalized version of the dictionaries, fully converted 
 - Because several dictionaries originally came in HTML and were hard to convert to structured formats like JSON, the decision was made to convert **all** dictionaries into a consistent HTML format instead.
 - This approach allows the use of HTML rendering libraries on the website to faithfully preserve layout, spacing, and styling from the original sources.
 
+## Why HTML Format Instead of JSON?
+
+Initially, the goal was to structure all dictionary data in JSON for better programmatic access and easier processing. However, at least **10 high-quality dictionaries** came already formatted in HTML. Unfortunately, converting them to JSON was incredibly difficult due to the lack of consistent structure—each dictionary followed its own layout and markup conventions.
+
+Despite all being HTML, there were **no reliable patterns** across them that would allow for automated parsing into clean JSON. Attempting to write custom parsers for each one would have been extremely time-consuming and error-prone.
+
+On the flip side, the existing HTML already included well-defined **layout, spacing, and styling**, which made them **highly readable when rendered directly** in a frontend using HTML rendering libraries. Given that, the decision was made—somewhat reluctantly—to convert all non-HTML dictionaries into HTML instead, creating a **uniform HTML format** across the board.
+
+While not ideal from a data-structure standpoint, this approach ensures consistent presentation and usability for the end users on the website. It’s not the perfect solution, but it works well enough for now.
+
 ## Contributing
 
 If you're able to parse the HTML-formatted dictionaries into clean JSON structures, your help would be greatly appreciated!  
